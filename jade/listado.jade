@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	title Listado
+	link(rel="stylesheet", href="css/font-awesome.min.css")
+	link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+	link(rel="stylesheet", href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css")
+	link(rel="stylesheet", href="https://cdn.datatables.net/buttons/1.2.0/css/buttons.bootstrap.min.css")
+	link(rel="stylesheet", href="css/css-layout.css")
+	link(rel="stylesheet", href="css/css-listado.css")
+	script(src="https://code.jquery.com/jquery-1.12.3.min.js")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+	script(src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js")
+	script(src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js")
+	script(src="js/js-listado.js")
+	script(src="js/js-menu.js")
+body.row
+	include _menu.jade
+	.container.col-md-9#container
+		.container--body.row
+			.body--title.col-md-12
+				h2 Listado
+			.body--table.col-md-12
+				table#tabla.table.table-striped.table-bordered(cellspacing='0', width='100%')
+					thead
+						tr
+							th Nombre
+							th Cargo
+							th Oficina
+							th Extn.
+							th Fecha Inicio
+							th Salario
+							th
+		include _footer.jade
+	

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title>Listado</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.0/css/buttons.bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/css-layout.css"/>
+  <link rel="stylesheet" href="css/css-listado.css"/>
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+  <script src="js/js-listado.js"></script>
+  <script src="js/js-menu.js"></script>
+</head>
+<body class="row">
+  <div class="nav"><a id="nav-bar" class="fa fa-bars"></a></div>
+  <div id="menu-bar" class="menu col-md-3 act">
+    <nav>
+      <ul>
+        <li><a href="inicio.html"><img src="image/logix.png" alt=""/></a></li>
+        <li> <a href="inicio.html"><i class="fa fa-home"></i>Inicio</a></li>
+        <li class="sub-item"><i class="fa fa-file-text-o"></i>Sub-Menu
+          <ul>
+            <li><a href="#"><i class="fa fa-asterisk"></i>Number</a></li>
+            <li><a href="#"><i class="fa fa-anchor"></i>Anchor</a></li>
+            <li><a href="formulario.html"><i class="fa fa-book"></i>Formulario</a></li>
+          </ul>
+        </li>
+        <li> <a href="listado.html"><i class="fa fa-list-ol"></i>Listado</a></li>
+      </ul>
+    </nav>
+    <div class="btn--salir"><a href="index.html" class="fa fa-sign-out"></a></div>
+  </div>
+  <div id="container" class="container col-md-9">
+    <div class="container--body row">
+      <div class="body--title col-md-12">
+        <h2>Listado</h2>
+      </div>
+      <div class="body--table col-md-12">
+        <table id="tabla" cellspacing="0" width="100%" class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Cargo</th>
+              <th>Oficina</th>
+              <th>Extn.</th>
+              <th>Fecha Inicio</th>
+              <th>Salario</th>
+              <th></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <footer class="pie">
+      <p><strong>© Copyright 2015 Todos los derechos reservados.</strong></p>
+    </footer>
+  </div>
+</body>

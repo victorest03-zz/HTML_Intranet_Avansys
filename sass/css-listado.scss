@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:700);
+
+.container--body{
+	width: calc(100% - 2em);
+	margin: 0 1em;
+	padding-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	.body--title{
+		width: 100%;
+		h2{
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			font-family: 'Bitter', serif;
+			padding: 1em 0 1.5em 0;
+			margin: 0;
+		}
+	}
+	.body--table{
+		padding: 0 1em;
+
+		table{
+			box-shadow: 0 0 25px #FF140C;
+			thead{
+				background: #FF140C;
+				color: #fff;
+				tr{
+					th{
+						&::after{
+							color: #fff;
+							opacity: 0.8;
+							font-weight: 100;
+						}
+						&:last-child{
+							&::after{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+			tbody{
+				tr{
+					td:last-child{
+						a{
+							text-decoration: none;
+							cursor: pointer;
+							font-size: 1.2em;
+							padding-left: 2px;
+							padding-right: 2px;
+						}
+					}
+					&.even{
+						td:last-child{
+							a{
+								color: #fff;
+							}
+						}
+					}
+					&.odd{
+						td:last-child{
+							a{
+								color: #000;
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+}
+
+.even{
+	color: #fff;
+	background: rgba(0,0,0,.1);
+}
+
+.odd{
+	color: #000;
+}
+
+input.form-control:focus,textarea:focus,input[type=checkbox]:focus,button:focus{
+	border: solid 1px #FF140C !important;
+	box-shadow: 0 0 10px #FF140C !important;
+}
+
+.pagination{
+	li{
+		a{
+			color: #000;
+		}
+	}
+
+	.active{
+		a,a:focus{
+			color: #fff;
+			background: #FF140C;
+			border-color: #FF140C;
+		}
+	}
+}
+
+.dataTables_filter,.toolbar{
+	display:inline-block;
+}
+
+.dataTables_filter{
+	width: 30%;
+}
+.toolbar{
+	width: 70%;
+	button{
+		background: #FF140C;
+		color: #fff;
+		border-color:#fff;
+		outline: 0;
+		margin-right: 10px;
+		&:hover{
+			border-color:#FF140C;
+			color: #fff;
+			box-shadow: 0 0 10px #FF140C !important;
+		}
+
+		&:focus{
+			border-color:#fff !important;
+			box-shadow:none !important;
+			color: #fff;
+			outline: 0;
+		}
+		&:active{
+			outline: 0;
+			border-color:#FF140C;
+		}
+		i{
+			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+}

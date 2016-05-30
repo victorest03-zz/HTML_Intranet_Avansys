@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:700);
+.container--body {
+  width: calc(100% - 2em);
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container--body .body--title {
+  width: 100%;
+}
+
+.container--body .body--title h2 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Bitter', serif;
+  padding: 1em 0 1.5em 0;
+  margin: 0;
+}
+
+.container--body .body--frm {
+  padding: 0 1em;
+}
+
+@media (max-width: 992px) {
+  .container--body {
+    height: initial;
+  }
+  .container--body .body--frm {
+    width: 100%;
+  }
+}
+
+label.control-label {
+  color: #fff;
+  text-align: left !important;
+}
+
+.checkbox, .radio-inline {
+  color: #fff;
+  font-weight: 400;
+}
+
+input[type=checkbox] {
+  position: relative !important;
+  margin-left: 0 !important;
+}
+
+input.form-control:focus, textarea:focus, input[type=checkbox]:focus {
+  border: solid 1px #FF140C !important;
+  box-shadow: 0 0 10px #FF140C !important;
+}
+
+button[type='submit'] {
+  margin: 1em 0;
+  background: rgba(0, 0, 0, 0.1);
+  outline: 0 !important;
+  font-size: 1.2em;
+  color: #fff;
+  border: solid 1px #fff;
+}
+
+button[type='submit']:hover, button[type='submit']:active {
+  background: #FF140C;
+  color: #fff;
+}
+
+.btn {
+  text-align: center;
+}

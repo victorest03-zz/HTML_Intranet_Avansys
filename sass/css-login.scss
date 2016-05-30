@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #ED8800;
+    
+    .container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+        .bg{
+            figure{
+                text-align: center;
+                img{
+                    width: 50%;
+                    
+                    @media (min-width: 768px) and (max-width: 992px){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .login{
+            background: #E52C31;
+            padding: 1.5em 3em;
+            border-radius: 15px;
+            margin: .5em;
+            box-shadow: 0 0 10px #000;
+            header.login--cabezera{
+                img{
+                    margin-bottom: 2em;
+                    width: 100%;
+                    text-align: center;
+                    @media (min-width: 768px) and (max-width: 992px){
+                        margin-bottom: .3em;
+                    }
+                }
+            }
+            .login--cuerpo{
+                form{
+                    .form-group{
+                        label{
+                            font-size: 1.2em;
+                            color: #fff;
+                            text-align: left;
+                            padding-right: 0;
+                            padding-bottom: 10px;;
+                        }
+                        div{
+                            input[type="text"],input[type="password"]{
+                                border-color: none;
+                                outline: 0;
+                                box-shadow:none;
+                            }
+
+                            @media (min-width: 768px) and (max-width: 992px){
+                                padding-right: 0;
+                                padding-left: 0;
+                            }
+                            @media(max-width: 768px){
+                                padding-right: 0;
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                    button[type='submit']{
+                        width: 100%;
+                        margin: 1em 0;
+                        border-radius: 15px;
+                        background: transparent;
+                        color: #fff;
+                        outline: 0;
+                        font-size: 1.2em;
+                        &:hover{
+                            background: rgba(0,0,0,.2);
+                            
+                        }
+                    }
+                    a{  
+                        color: #fff;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    transition-duration: 2s;
+                }
+
+                
+            }
+        }
+    }
+}
+
+.hidden-act{
+    display: none;
+}

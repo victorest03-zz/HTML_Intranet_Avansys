@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    title Login
+    link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/css-login.css")
+    script(src='https://code.jquery.com/jquery-2.2.4.min.js')
+    script(src='js/js-login.js')
+body
+    .container.row
+        .bg.img1.col-md-4.col-sm-3.hidden-xs
+            figure
+                img(src="image/tipsideas.png", alt="")
+        .login.col-md-4.col-sm-6.col-xs-12
+            header.login--cabezera
+                img(src="image/logix.png", alt="")
+            .login--cuerpo
+                form.form-horizontal#frmLogin(method='post' action='formulario.html')
+                    .form-group
+                        label.control-label.col-lg-4(for='txtUsuario') Usuario
+                        .col-lg-8
+                            input.form-control(type="text" id='txtUsuario' placeholder='Ingrese Usuario')
+                    .form-group
+                        label.control-label.col-lg-4(for='txtPassword') Contraseña
+                        .col-lg-8
+                            input.form-control(type="password" id='txtPassword' placeholder='Ingrese Contraseña')
+                    button.btn.btn-default(type='submit') Iniciar Sesion
+                    a#btn-olvidar Olvidate contraseña?
+                form.form-horizontal.hidden-act#frmOlvido(method='post' action='formulario.html')
+                    .form-group
+                        label.control-label.col-lg-4(for='txtDni') DNI
+                        .col-lg-8
+                            input.form-control(type="text" id='txtDni' placeholder='Ingrese Dni')
+                    button.btn.btn-default(type='submit') Recuperar Contraseña
+                    a#btn-sesion Iniciar Sesion!
+            footer.login--pie
+        .bg.img2.col-md-4.col-sm-3.hidden-xs
+            figure
+                img(src="image/persona.png", alt="")

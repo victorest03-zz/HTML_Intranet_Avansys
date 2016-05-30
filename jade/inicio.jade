@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	title Formulario
+	link(rel="stylesheet", href="css/font-awesome.min.css")
+	link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+	link(rel="stylesheet", href="css/css-layout.css")
+	link(rel="stylesheet", href="css/css-inicio.css")
+	script(src="https://code.jquery.com/jquery-1.12.3.min.js")
+	script(src="js/js-menu.js")
+body.row
+	include _menu.jade
+	.container.col-md-9#container
+		.container--body
+			h2 Bienvenido al Intranet de Evaluacion de Desempeño
+		include _footer.jade
