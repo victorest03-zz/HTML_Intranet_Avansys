@@ -21,15 +21,16 @@ body.row
 					.form-group
 						label.col-sm-4.control-label(for='inputEmail3') Email
 						.col-sm-8
-							input#inputEmail3.form-control(type='email', placeholder='Email')
+							input#inputEmail3.form-control(type='email', placeholder='Email' required=true)
 					.form-group
 						label.col-sm-4.control-label(for='inputPassword3') Password
 						.col-sm-8
-							input#inputPassword3.form-control(type='password', placeholder='Password')
+							input#inputPassword3.form-control(type='password', placeholder='Password' required=true )
 					.form-group
 						label.col-sm-4.control-label(for='cboCombo') Departamento
 						.col-sm-8
-							select.form-control#cboCombo
+							select.form-control#cboCombo(required=true)
+								option(value="") Seleccione...
 								option Lima
 								option Callao
 								option Arequipa
@@ -39,7 +40,7 @@ body.row
 						label.col-sm-4.control-label(for='cboCombo') Genero
 						.col-sm-8
 							label.radio-inline
-								input(type='radio' name='rdSexo')
+								input(type='radio' name='rdSexo' required=true)
 								|  Hombre
 							label.radio-inline
 								input(type='radio' name='rdSexo')
@@ -48,29 +49,29 @@ body.row
 						label.col-sm-4.control-label(for='cboCombo') Clases
 						.col-sm-8
 							label.checkbox
-								input(type='checkbox' name='chkClase')
+								input(type='checkbox' name='chkClase[]')
 								|  Matematica
 							label.checkbox
-								input(type='checkbox' name='chkClase')
+								input(type='checkbox' name='chkClase[]')
 								|  Comunicacion
 							label.checkbox
-								input(type='checkbox' name='chkClase')
+								input(type='checkbox' name='chkClase[]')
 								|  Redes
 							label.checkbox
-								input(type='checkbox' name='chkClase')
+								input(type='checkbox' name='chkClase[]')
 								|  Computacion
 					.form-group
-						label.col-sm-4.control-label(for='txtComentario') Fecha
+						label.col-sm-4.control-label(for='txtFecha') Fecha
 						.col-sm-8
-							input.form-control(type="date")
+							input.form-control(type="date" id="txtFecha" required=true)
 					.form-group
-						label.col-sm-4.control-label(for='txtComentario') Cantidad
+						label.col-sm-4.control-label(for='txtCantidad' ) Cantidad
 						.col-sm-8
-							input.form-control(type="number" step="any")
+							input.form-control(type="number" step="any" id="txtCantidad" required=true)
 					.form-group
 						label.col-sm-4.control-label(for='txtComentario') Comentario
 						.col-sm-8
-							textarea.form-control(rows="5")
+							textarea.form-control(rows="5" id="txtComentario" required=true)
 					.form-group
 						.col-sm-12.btn
 							button.btn(type='submit') Registrar Evaluacion

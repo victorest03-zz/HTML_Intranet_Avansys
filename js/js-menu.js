@@ -15,6 +15,13 @@ $(document).ready(function() {
 		
 	})
 
-	
+	function check_text(input,text) {
+		if (input.validity.patternMismatch){
+			input.setCustomValidity(text);
+		}
+		else {
+			input.setCustomValidity("");
+		}
+	}
 
 })
